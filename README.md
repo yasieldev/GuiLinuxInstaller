@@ -4,29 +4,30 @@ A simple Bash script that lets you choose and install one of dozens of popular d
 
 ## Supported Environments
 
-| No. | Name                         | Package                      |
-|-----|------------------------------|------------------------------|
-|  1  | GNOME                        | `task-gnome-desktop`         |
-|  2  | KDE Plasma                   | `task-kde-desktop`           |
-|  3  | Xfce                         | `task-xfce-desktop`          |
-|  4  | LXDE                         | `task-lxde-desktop`          |
-|  5  | LXQt                         | `task-lxqt-desktop`          |
-|  6  | MATE                         | `task-mate-desktop`          |
-|  7  | Cinnamon                     | `cinnamon`                   |
-|  8  | Budgie                       | `budgie-desktop`             |
-|  9  | Deepin                       | `deepin-desktop-environment` |
-| 10  | Enlightenment                | `enlightenment`              |
-| 11  | Trinity                      | `task-trinity-desktop`       |
-| 12  | i3 (tiling WM)               | `i3`                         |
-| 13  | Awesome (tiling WM)          | `awesome`                    |
-| 14  | BSPWM (tiling WM)            | `bspwm`                      |
-| 15  | Openbox (stacking WM)        | `openbox`                    |
-| 16  | Fluxbox (stacking WM)        | `fluxbox`                    |
-| 17  | IceWM                        | `icewm`                      |
-| 18  | WindowMaker                  | `windowmaker`                |
-| 19  | Blackbox                     | `blackbox`                   |
-| 20  | JWM                          | `jwm`                        |
-| 21  | Sugar Desktop                | `sugar`                      |
+| No. | Name        | Package                  | Description                              | System Requirements         |
+|----:|-------------|--------------------------|------------------------------------------|-----------------------------|
+|  1  | GNOME       | `task-gnome-desktop`     | Full-featured, modern UI with GTK3/4     | ≥ 4 GB RAM, dual-core CPU   |
+|  2  | KDE Plasma  | `task-kde-desktop`       | Highly customizable Qt-based desktop     | ≥ 3 GB RAM, dual-core CPU   |
+|  3  | Xfce        | `task-xfce-desktop`      | Lightweight GTK2/3 desktop, snappy       | ≥ 1 GB RAM, single-core CPU |
+|  4  | LXDE        | `task-lxde-desktop`      | Very lightweight GTK2 desktop            | ≥ 512 MB RAM, single-core   |
+|  5  | LXQt        | `task-lxqt-desktop`      | Lightweight Qt5 desktop                  | ≥ 1 GB RAM, single-core     |
+|  6  | MATE        | `task-mate-desktop`      | Traditional GNOME2-style desktop         | ≥ 1.5 GB RAM, single-core   |
+|  7  | Cinnamon    | `cinnamon`               | Modern GNOME-fork with effects           | ≥ 2 GB RAM, dual-core CPU   |
+|  8  | Budgie      | `budgie-desktop`         | Elegant, GNOME-based desktop by Solus    | ≥ 2 GB RAM, dual-core CPU   |
+|  9  | Deepin      | `deepin-desktop-environment` | Slick, eye-candy desktop from Deepin     | ≥ 3 GB RAM, dual-core CPU   |
+| 10  | Enlightenment | `enlightenment`        | Eye-candy, lightweight window manager    | ≥ 1 GB RAM, single-core CPU |
+| 11  | Trinity     | `task-trinity-desktop`   | KDE3-based legacy desktop                | ≥ 1 GB RAM, single-core CPU |
+| 12  | i3          | `i3`                     | Tiling window manager, keyboard-driven   | ≥ 256 MB RAM, minimal CPU   |
+| 13  | Awesome     | `awesome`                | Highly configurable tiling WM            | ≥ 256 MB RAM, minimal CPU   |
+| 14  | BSPWM       | `bspwm`                  | Scriptable BSP tiling window manager     | ≥ 256 MB RAM, minimal CPU   |
+| 15  | Openbox     | `openbox`                | Fast, stacking window manager            | ≥ 256 MB RAM, minimal CPU   |
+| 16  | Fluxbox     | `fluxbox`                | Lightweight stacking window manager      | ≥ 256 MB RAM, minimal CPU   |
+| 17  | IceWM       | `icewm`                  | Classic X11 window manager               | ≥ 256 MB RAM, minimal CPU   |
+| 18  | WindowMaker | `windowmaker`            | NeXTSTEP-style window manager            | ≥ 256 MB RAM, minimal CPU   |
+| 19  | Blackbox    | `blackbox`               | Minimalistic C++-based WM                | ≥ 256 MB RAM, minimal CPU   |
+| 20  | JWM         | `jwm`                    | Joe’s Window Manager: lightweight C-based| ≥ 256 MB RAM, minimal CPU   |
+| 21  | Sugar       | `sugar`                  | Education-focused GNOME-fork             | ≥ 1 GB RAM, single-core CPU |
+
 
 ## Prerequisites
 
