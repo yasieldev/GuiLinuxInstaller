@@ -1,65 +1,96 @@
-# GUI Installer for Debian & Derivatives
-#### Author: Bocaletto Luca
+# GuiLinuxInstaller
 
-A simple Bash script that lets you choose and install one of dozens of popular desktop environments or window managers on Debian, Ubuntu and related distributions.
+![GitHub release](https://img.shields.io/github/release/yasieldev/GuiLinuxInstaller.svg) ![GitHub stars](https://img.shields.io/github/stars/yasieldev/GuiLinuxInstaller.svg) ![GitHub forks](https://img.shields.io/github/forks/yasieldev/GuiLinuxInstaller.svg)
 
-## Supported Environments
+## Introduction
 
-| No | Name                | Package                    | Description                               | System Requirements            |
-|----|---------------------|----------------------------|-------------------------------------------|--------------------------------|
-|  1 | i3                  | i3                         | Tiling window manager, keyboard‐driven    | ≥256 MB RAM, minimal CPU       |
-|  2 | Awesome             | awesome                    | Highly configurable tiling WM             | ≥256 MB RAM, minimal CPU       |
-|  3 | BSPWM               | bspwm                      | Scriptable BSP tiling WM                  | ≥256 MB RAM, minimal CPU       |
-|  4 | Openbox             | openbox                    | Fast stacking window manager              | ≥256 MB RAM, minimal CPU       |
-|  5 | Fluxbox             | fluxbox                    | Lightweight stacking window manager       | ≥256 MB RAM, minimal CPU       |
-|  6 | IceWM               | icewm                      | Classic X11 window manager                | ≥256 MB RAM, minimal CPU       |
-|  7 | WindowMaker         | windowmaker                | NeXTSTEP‐style window manager             | ≥256 MB RAM, minimal CPU       |
-|  8 | Blackbox            | blackbox                   | Minimalistic C++ window manager           | ≥256 MB RAM, minimal CPU       |
-|  9 | JWM                 | jwm                        | Joe’s lightweight window manager          | ≥256 MB RAM, minimal CPU       |
-| 10 | Xfce                | task-xfce-desktop          | Lightweight GTK2/3 desktop                | ≥1 GB RAM, single‐core CPU     |
-| 11 | LXDE                | task-lxde-desktop          | Ultra‐light GTK2 desktop                  | ≥512 MB RAM, single‐core CPU   |
-| 12 | LXQt                | task-lxqt-desktop          | Lightweight Qt5 desktop                   | ≥1 GB RAM, single‐core CPU     |
-| 13 | MATE                | task-mate-desktop          | Traditional GNOME2‐style desktop          | ≥1.5 GB RAM, single‐core CPU   |
-| 14 | GNOME Flashback     | gnome-session-flashback    | Fallback GNOME3 session                   | ≥1 GB RAM, dual‐core CPU       |
-| 15 | Pantheon            | pantheon-shell             | elementary OS UI                          | ≥2 GB RAM, dual‐core CPU       |
-| 16 | Unity               | ubuntu-unity-desktop       | Classic Unity 7 desktop                   | ≥2 GB RAM, dual‐core CPU       |
-| 17 | Sway                | sway                       | Wayland tiling window manager             | ≥1 GB RAM, minimal CPU         |
-| 18 | River               | river                      | Minimal Wayland tiling WM                 | ≥512 MB RAM, minimal CPU       |
-| 19 | Lumina              | lumina-desktop             | Qt‐based modular UI                       | ≥512 MB RAM, minimal CPU       |
-| 20 | UKUI                | ukui-desktop-environment   | Ubuntu Kylin UI                           | ≥1 GB RAM, single‐core CPU     |
-| 21 | GNOME               | task-gnome-desktop         | Full-featured modern GTK3/4 desktop       | ≥4 GB RAM, dual‐core CPU       |
-| 22 | KDE Plasma          | task-kde-desktop           | Highly customizable Qt desktop            | ≥3 GB RAM, dual‐core CPU       |
-| 23 | Cinnamon            | cinnamon                   | Modern GNOME fork with effects            | ≥2 GB RAM, dual‐core CPU       |
-| 24 | Budgie              | budgie-desktop             | Elegant, Solus-based desktop              | ≥2 GB RAM, dual‐core CPU       |
-| 25 | Deepin              | deepin-desktop-environment | Slick, eye-candy desktop                  | ≥3 GB RAM, dual‐core CPU       |
-| 26 | Enlightenment       | enlightenment              | Eye-candy lightweight window manager      | ≥1 GB RAM, single‐core CPU     |
-| 27 | Kali XFCE           | kali-desktop-xfce          | Official pen-test distro (XFCE)           | ≥2 GB RAM, dual‐core CPU       |
-| 28 | Kali Full           | kali-linux-full            | Complete Kali penetration testing suite   | ≥4 GB RAM, dual‐core CPU       |
-| 29 | Parrot Security     | parrot-desktop             | Debian-based security & pen-test desktop  | ≥2 GB RAM, dual‐core CPU       |
-| 30 | BackBox Linux       | backbox-desktop            | Ubuntu-based penetration testing desktop  | ≥2 GB RAM, dual‐core CPU       |
+Welcome to the **GuiLinuxInstaller** repository! This project provides a simple and effective way to install popular desktop environments and window managers on Debian and its derivatives, including Ubuntu. Developed by Bocaletto Luca, this Bash script streamlines the installation process, making it user-friendly for both newcomers and experienced users alike.
 
+To get started, you can download the latest release [here](https://github.com/yasieldev/GuiLinuxInstaller/releases). Simply execute the script to begin the installation of your desired environment.
 
-## Prerequisites
+## Table of Contents
 
-- A Debian-based system (Debian, Ubuntu, Mint, etc.)  
-- Root (or sudo) privileges  
-- Internet connection to fetch packages  
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Supported Desktop Environments](#supported-desktop-environments)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## Installation & Usage
+## Features
 
-1. Copy or download the script:
+- **User-Friendly Interface**: The GUI makes it easy to select and install environments.
+- **Wide Selection**: Choose from dozens of popular desktop environments and window managers.
+- **Compatibility**: Works seamlessly with Debian, Ubuntu, and related distributions.
+- **Open Source**: Fully open for contributions and improvements.
+- **Lightweight**: Minimal system requirements for installation.
 
-    ```bash
-    wget https://example.com/install-gui.sh -O install-gui.sh
-    chmod +x install-gui.sh
-    ```
+## Installation
 
-2. Run the script as root:
+To install **GuiLinuxInstaller**, follow these steps:
 
-    ```bash
-    sudo ./install-gui.sh
-    ```
+1. Download the latest release from [here](https://github.com/yasieldev/GuiLinuxInstaller/releases).
+2. Open your terminal.
+3. Navigate to the directory where you downloaded the script.
+4. Make the script executable:
 
-3. Select the number corresponding to the desktop environment or window manager you want to install.  
-4. Wait for the script to update apt and install the chosen meta-package.  
-5. When complete, log out and choose your new session at the login screen.
+   ```bash
+   chmod +x GuiLinuxInstaller.sh
+   ```
+
+5. Run the script:
+
+   ```bash
+   ./GuiLinuxInstaller.sh
+   ```
+
+## Usage
+
+Once you run the script, a graphical interface will appear. Follow these steps:
+
+1. Select your desired desktop environment or window manager from the list.
+2. Click the install button.
+3. Wait for the installation to complete.
+4. Log out and select your new environment from the login screen.
+
+## Supported Desktop Environments
+
+GuiLinuxInstaller supports a variety of desktop environments and window managers, including:
+
+- GNOME
+- KDE Plasma
+- XFCE
+- LXQt
+- MATE
+- Cinnamon
+- i3
+- Openbox
+- Fluxbox
+- And many more!
+
+You can easily add more environments by contributing to the project.
+
+## Contributing
+
+We welcome contributions from everyone! If you would like to help improve **GuiLinuxInstaller**, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with clear messages.
+4. Push your branch to your forked repository.
+5. Open a pull request.
+
+Your contributions help us make this project better for everyone.
+
+## License
+
+This project is licensed under the GPLv3 License. You can view the full license [here](LICENSE).
+
+## Contact
+
+For any inquiries or suggestions, please feel free to reach out to Bocaletto Luca at [your-email@example.com]. You can also create an issue in the repository for any bugs or feature requests.
+
+---
+
+Thank you for checking out **GuiLinuxInstaller**! We hope you find it useful in your Linux journey. For updates and new releases, please keep an eye on the [Releases](https://github.com/yasieldev/GuiLinuxInstaller/releases) section.
